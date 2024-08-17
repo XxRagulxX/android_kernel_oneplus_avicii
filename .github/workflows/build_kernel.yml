@@ -12,9 +12,7 @@ on:
              default: '* No Changelog provided by the developer'
   
 env:
-  TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-  CHATID: ${{ secrets.TG_CHAT_ID }}
-  CHATIDTEST: ${{ secrets.TG_CHAT_ID_TEST }}
+  TOKEN: ${{ secrets.TOKEN }}
   CHANGELOG: ${{ github.event.inputs.Changelog }}
   BUILDTYPE: ${{ github.event.inputs.Buildtype }}
 jobs:
